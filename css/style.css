@@ -1,0 +1,108 @@
+:root {
+    --discount-color: white;
+    --discount-bgcolor: #eb0037;
+    --sustainability-bgcolor: #00875a;
+    --price-color: #ff0000;
+    --favorites-bgcolor: white;
+    --favorites-color: #ff0000;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: darkgray;
+}
+
+/* ----> Utility <---- */
+
+.bg_black {
+    background-color: black;
+}
+
+.bg_red {
+    background-color: rgb(160, 3, 3);
+}
+
+.bg_blue {
+    background-color: rgb(1, 1, 148);
+}
+
+.bg_green {
+    background-color: rgb(1, 90, 1);
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+/* ----> Main <---- */
+
+.contenitor {
+    width: 908px;
+    margin: 0 auto;
+}
+
+.slot {
+    width: 300px;
+    height: 500px;
+    display: inline-block;
+    position: relative;
+}
+
+.description {
+    width: 300px;
+    height: 40px;
+    display: inline-block;
+}
+
+img {
+    width: 300px;
+    height: 500px;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.discount {
+    color: var(--discount-color);
+    position: absolute;
+    background-color: var(--discount-bgcolor);
+    bottom: 20px;
+    padding: 0.3rem;
+    font-size: 0.8rem;
+}
+
+
+.sustainability {
+    position: absolute;
+    bottom: 20px;
+    left: 50px;
+    background-color: var(--sustainability-bgcolor);
+    padding: 0.3rem;
+    font-size: 0.8rem;
+}
+
+.favorites {
+    position: absolute;
+    top: 20px;
+    right: 0;
+    border: 0;
+    background-color: var(--favorites-bgcolor);
+    height: 40px;
+    width: 40px;
+    font-size: x-large;
+}
+
+.slot:hover .invisible {
+    visibility: visible;
+}
+
+.favorites:hover {
+    color: var(--favorites-color);
+}
