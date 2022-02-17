@@ -71,17 +71,22 @@ img {
     bottom: 20px;
     padding: 0.3rem;
     font-size: 0.8rem;
+    font-weight: 600;
 }
 
 
-.sustainability {
+ .sustainability {
     position: absolute;
     bottom: 20px;
-    left: 50px;
     background-color: var(--sustainability-bgcolor);
     padding: 0.3rem;
     font-size: 0.8rem;
     color: var(--sustainability-color);
+    font-weight: 600;
+} 
+
+div.discount + .sustainability {  
+    left: 50px;
 }
 
 .favorites {
@@ -104,12 +109,12 @@ img {
 }
 
 .brand {
-    font-size: small;
+    font-size: smaller;
     font-weight: 100;
 }
 
 .product {
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .original_price {
@@ -120,4 +125,5 @@ img {
 .discounted_price {
     color: var(--discount-bgcolor);
     font-size: 0.9rem;
+    font-weight: 600;
 }
