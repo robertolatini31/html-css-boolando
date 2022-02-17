@@ -14,10 +14,6 @@
     box-sizing: border-box;
 }
 
-body {
-    background-color: darkgray;
-}
-
 /* ----> Utility <---- */
 
 .bg_black {
@@ -56,7 +52,6 @@ body {
 
 .description {
     width: 300px;
-    height: 40px;
     display: inline-block;
 }
 
@@ -105,4 +100,16 @@ img {
 
 .favorites:hover {
     color: var(--favorites-color);
+}
+
+.brand {
+    /* font-size: small; */
+}
+
+.original_price {
+    text-decoration: line-through;
+}
+
+.discounted_price {
+    color: var(--discount-bgcolor);
 }
