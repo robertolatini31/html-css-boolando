@@ -6,6 +6,7 @@
     --favorites-bgcolor: white;
     --favorites-color: #ff0000;
     --sustainability-color: white;
+    --header-bgcolor: #d7d7d7;
 }
 
 *{
@@ -36,6 +37,17 @@
     visibility: hidden;
 }
 
+/* ----> Header <---- */
+
+.title {
+    margin-bottom: 3rem;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 600;
+    padding: 2rem;
+    background-color: var(--header-bgcolor);
+    box-shadow: 0 0 40px #423c3c;
+}
 /* ----> Main <---- */
 
 .contenitor {
@@ -126,4 +138,16 @@ div.discount + .sustainability {
     color: var(--discount-bgcolor);
     font-size: 0.9rem;
     font-weight: 600;
+}
+
+/* ----> Footer <----  */
+
+footer{
+    margin-top: 3rem;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 2.5rem;
+    background-color: var(--header-bgcolor);
+    box-shadow: 0 0 40px #423c3c;
 }
