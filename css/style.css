@@ -5,7 +5,7 @@
     --price-color: #ff0000;
     --favorites-bgcolor: white;
     --favorites-color: #ff0000;
-
+    --sustainability-color: white;
 }
 
 *{
@@ -81,6 +81,7 @@ img {
     background-color: var(--sustainability-bgcolor);
     padding: 0.3rem;
     font-size: 0.8rem;
+    color: var(--sustainability-color);
 }
 
 .favorites {
@@ -103,13 +104,20 @@ img {
 }
 
 .brand {
-    /* font-size: small; */
+    font-size: small;
+    font-weight: 100;
+}
+
+.product {
+    font-weight: 500;
 }
 
 .original_price {
     text-decoration: line-through;
+    font-size: 0.9rem;
 }
 
 .discounted_price {
     color: var(--discount-bgcolor);
+    font-size: 0.9rem;
 }
